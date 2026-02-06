@@ -1,0 +1,51 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update Propose Day blank-state defaults (date + sender signature)",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Update Propose Day blank-state default date to render exactly \"February 8th, 2026\" everywhere the default date appears (hero date line and personalization placeholders/helper text).",
+      "acceptanceCriteria": [
+        "When the Date input is left blank, the hero section date text renders exactly \"February 8th, 2026\" (matching capitalization, spacing, punctuation).",
+        "The Personalization panel Date placeholder shows exactly \"February 8th, 2026\".",
+        "The Personalization panel Date helper text says the blank-state default is exactly \"February 8th, 2026\".",
+        "If a user enters a custom date, that custom date is displayed instead of the default."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProposeDayPage.tsx",
+          "operation": "modify",
+          "description": "Replace the current blank-state date default (currently \"Feb 8th\") with the exact string \"February 8th, 2026\" so the hero date line (and any other in-page references) show the required default when the Date input is blank."
+        },
+        {
+          "path": "frontend/src/components/PersonalizationPanel.tsx",
+          "operation": "modify",
+          "description": "Update the Date input placeholder and helper text to use the exact blank-state default string \"February 8th, 2026\" (replacing the current \"Feb 8th\" references) so the panel matches what the hero displays."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Update Propose Day blank-state default sender name so the proposal signature renders exactly \"From your Baby girl\" when blank, and align personalization placeholder + helper text.",
+      "acceptanceCriteria": [
+        "When the From Name input is left blank, the proposal step renders a signature line that reads exactly \"From your Baby girl\" (no extra words before/after).",
+        "The Personalization panel From placeholder shows exactly \"your Baby girl\" (or the exact substring used for the default name portion that results in the signature line \"From your Baby girl\").",
+        "The Personalization panel From helper text states the blank-state default is \"your Baby girl\" (or equivalent wording that unambiguously matches the displayed default).",
+        "If a user enters a custom From name, the proposal signature uses the custom value instead of the default."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProposeDayPage.tsx",
+          "operation": "modify",
+          "description": "Change the blank-state default for the sender name (currently \"Your Love\") to \"your Baby girl\" and adjust the proposal signature rendering so that when blank it shows exactly \"From your Baby girl\" (removing any extra trailing text), while still showing \"From <custom value>\" when the user provides a custom From name."
+        },
+        {
+          "path": "frontend/src/components/PersonalizationPanel.tsx",
+          "operation": "modify",
+          "description": "Update the From (Your Name) input placeholder and helper text to match the new blank-state default name portion \"your Baby girl\", ensuring the panel guidance aligns with the signature behavior in the proposal step."
+        }
+      ]
+    }
+  ]
+}

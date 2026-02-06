@@ -1,0 +1,10 @@
+{
+  "frontend/src/App.tsx": "Main application entry point that renders the ProposeDayPage component.",
+  "frontend/src/components/ProposeDayPage.tsx": "Core proposal page component managing five view states (hero, three gift surprise pages, proposal, success) with personalization controls, romantic background, floating hearts, and smooth transitions; defaults to \"my lovely baby\", \"your Baby girl\", and \"February 8th, 2026\" when fields are blank.",
+  "frontend/src/components/FloatingHearts.tsx": "Animated floating hearts background component that respects prefers-reduced-motion accessibility preference and creates a romantic ambient effect.",
+  "frontend/src/components/SuccessCelebration.tsx": "Success state component displaying celebratory confetti hearts animation, romantic message, and option to relive the proposal moment.",
+  "frontend/src/components/PersonalizationPanel.tsx": "Collapsible side panel with form inputs for customizing boyfriend name, sender name, date, and personal message; updated placeholders and helper text to reflect new defaults (\"my lovely baby\", \"your Baby girl\", and \"February 8th, 2026\").",
+  "frontend/src/index.css": "Global styles with warm romantic OKLCH color palette (rose/cream tones), custom animations (floating hearts, confetti, gentle pulse), typography using Georgia serif for headings, and full reduced-motion support.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with romantic shadow utilities and font family definitions for serif headings.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as this is a frontend-only application with no backend data requirements."
+}

@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no backend logic.",
+  "feature_evidence.json": "Feature evidence report mapping two personalization-related features to affected frontend files.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose of each frontend file in the project.",
+  "frontend/index.css": "Tailwind base styles and theme variables defining color tokens, dark mode values, and global element styling.",
+  "frontend/index.html": "Base HTML entry file mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Minimal wrapper that renders ProposeDayPage.",
+  "frontend/src/components/FloatingHearts.tsx": "Animated floating hearts background component respecting reduced‑motion preferences.",
+  "frontend/src/components/PersonalizationPanel.tsx": "Side panel UI for editing personalized fields with defaults like \"my lovely baby\" and \"February 8th, 2026\".",
+  "frontend/src/components/ProposeDayPage.tsx": "Main proposal flow managing multiple view states, personalization inputs, defaults, and interactive transitions.",
+  "frontend/src/components/SuccessCelebration.tsx": "Success screen showing animated confetti hearts and celebratory messaging.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and updating a backend actor instance based on Internet Identity state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and provider for managing Internet Identity authentication, handling login, logout, and stored identity restoration.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file indicating no frontend data-fetching hooks are needed.",
+  "frontend/src/index.css": "Defines Tailwind base styles, custom color variables, dark mode palettes, fonts, and several animation keyframes.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, fonts, animations, and enabling plugins.",
+  "project_state.json": "Project metadata describing current features, defaults, and architectural notes for the romantic proposal website."
+}

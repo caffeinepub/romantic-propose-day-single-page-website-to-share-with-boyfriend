@@ -1,2 +1,3 @@
-# romantic-propose-day-single-page-website-to-share-with-boyfriend
-Exported from Caffeine project: Romantic Propose Day single-page website to share with boyfriend
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

@@ -1,0 +1,53 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T21:17:07.487Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-13",
+        "summary": "Update the Propose Day page blank-state default date to display exactly \"February 8th, 2026\" everywhere the default date is shown or referenced (including the hero date line and the personalization panel placeholder + helper text).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ProposeDayPage.tsx",
+          "frontend/src/components/PersonalizationPanel.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ProposeDayPage.tsx",
+          "frontend/src/components/PersonalizationPanel.tsx"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Update the Propose Day page blank-state default sender name so that when the \"From (Your Name)\" input is left blank, the proposal signature reads exactly \"From your Baby girl\" (including capitalization), and align the personalization panel placeholder + helper text to match this default.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ProposeDayPage.tsx",
+          "frontend/src/components/PersonalizationPanel.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ProposeDayPage.tsx",
+          "frontend/src/components/PersonalizationPanel.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/PersonalizationPanel.tsx",
+    "frontend/src/components/ProposeDayPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-06T21:17:07.484Z",
+  "summary": "Diff updates the Personalization panel placeholders/helper text and the ProposeDayPage computed default values for date and sender name. However, the truncated diff does not provide direct evidence that (a) the hero date line renders exactly the new default when blank, and (b) the proposal signature line renders exactly \"From your Baby girl\" with no extra text when blank, across all places the date/from are displayed.",
+  "missing_requirements": [
+    {
+      "id": "REQ-13",
+      "requirement": "Update the Propose Day page blank-state default date to display exactly \"February 8th, 2026\" everywhere the default date is shown or referenced (including the hero date line and the personalization panel placeholder + helper text).",
+      "reason": "Personalization panel placeholder/helper text and a `displayDate` fallback are shown, but the truncated diff does not include the hero section date line (or any other date render locations) to verify it renders exactly \"February 8th, 2026\" everywhere when the input is blank.",
+      "evidence": [
+        "frontend/src/components/PersonalizationPanel.tsx",
+        "frontend/src/components/ProposeDayPage.tsx (truncated)"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "Update the Propose Day page blank-state default sender name so that when the \"From (Your Name)\" input is left blank, the proposal signature reads exactly \"From your Baby girl\" (including capitalization), and align the personalization panel placeholder + helper text to match this default.",
+      "reason": "Personalization panel placeholder/helper text and a `displayFromName` fallback are shown, but the truncated diff does not include the proposal step signature rendering to confirm it is exactly \"From your Baby girl\" with no extra words when blank.",
+      "evidence": [
+        "frontend/src/components/PersonalizationPanel.tsx",
+        "frontend/src/components/ProposeDayPage.tsx (truncated)"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.62,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/PersonalizationPanel.tsx",
+    "frontend/src/components/ProposeDayPage.tsx",
+    "project_state.json"
+  ]
+}

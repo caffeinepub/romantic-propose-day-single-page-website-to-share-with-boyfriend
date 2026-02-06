@@ -1,0 +1,58 @@
+{
+  "kind": "build_request",
+  "title": "Update default date and sender signature text for the Propose Day proposal flow",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Update the Propose Day page blank-state default date to display exactly \"February 8th, 2026\" everywhere the default date is shown or referenced (including the hero date line and the personalization panel placeholder + helper text).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Date mention February 8th, 2026"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When the Date input is left blank, the hero section date text renders exactly \"February 8th, 2026\" (matching capitalization, spacing, punctuation).",
+        "The Personalization panel Date placeholder shows exactly \"February 8th, 2026\".",
+        "The Personalization panel Date helper text says the blank-state default is exactly \"February 8th, 2026\".",
+        "If a user enters a custom date, that custom date is displayed instead of the default."
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Update the Propose Day page blank-state default sender name so that when the \"From (Your Name)\" input is left blank, the proposal signature reads exactly \"From your Baby girl\" (including capitalization), and align the personalization panel placeholder + helper text to match this default.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "From your Baby girl"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When the From Name input is left blank, the proposal step renders a signature line that reads exactly \"From your Baby girl\" (no extra words before/after).",
+        "The Personalization panel From placeholder shows exactly \"your Baby girl\" (or the exact substring used for the default name portion that results in the signature line \"From your Baby girl\").",
+        "The Personalization panel From helper text states the blank-state default is \"your Baby girl\" (or equivalent wording that unambiguously matches the displayed default).",
+        "If a user enters a custom From name, the proposal signature uses the custom value instead of the default."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend files listed under frontend.immutablePaths must not be edited; compose new components or adjust other files instead.",
+    "Do not fetch images from the backend; keep images as static assets if needed."
+  ],
+  "nonGoals": [
+    "Do not add or change backend (Motoko) logic or persistence for these text-only default updates.",
+    "Do not redesign the overall visual theme beyond what is necessary to support the updated default strings.",
+    "Do not introduce third-party services or authentication changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

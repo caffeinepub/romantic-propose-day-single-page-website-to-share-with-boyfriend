@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-propose-day-page-blank-state-default-date-to-display-exactly-february-8th-2026-everywhere-the-default-date-is-shown-or-referenced-including-the-hero-date-line-and-the-personalization-panel-placeholder-helper-text",
+      "featureTitle": "Update the Propose Day page blank-state default date to display exactly \"February 8th, 2026\" everywhere the default date is shown or referenced (including the hero date line and the personalization panel placeholder + helper text).",
+      "files": [
+        "frontend/src/components/PersonalizationPanel.tsx",
+        "frontend/src/components/ProposeDayPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-propose-day-page-blank-state-default-sender-name-so-that-when-the-from-your-name-input-is-left-blank-the-proposal-signature-reads-exactly-from-your-baby-girl-including-capitalization-and-align-the-personalization-panel-placeholder-helper-text-to-match-this-default",
+      "featureTitle": "Update the Propose Day page blank-state default sender name so that when the \"From (Your Name)\" input is left blank, the proposal signature reads exactly \"From your Baby girl\" (including capitalization), and align the personalization panel placeholder + helper text to match this default.",
+      "files": [
+        "frontend/src/components/PersonalizationPanel.tsx",
+        "frontend/src/components/ProposeDayPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

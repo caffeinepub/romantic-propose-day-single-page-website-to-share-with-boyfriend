@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Expand the romantic proposal website from a single-page experience to include multiple pages featuring tiny gift elements and an additional text-message-style section, with updated default dedication/date/sender text.",
+  "architectural_notes": [
+    "Personalization/content decision: default salutation should be \"To my lovely baby\", include date \"February 8th, 2026\", and sign-off \"From your Baby girl\"."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-romantic-propose-day-website-experience-with-heart-touching-english-copy-suitable-to-send-to-the-user-s-boyfriend-including-a-clear-proposal-moment-and-a-celebratory-success-state",
+      "title": "Create a single-page romantic “Propose Day” website experience with heart-touching English copy suitable to send to the user’s boyfriend, including a clear proposal moment and a celebratory success state.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-simple-personalization-controls-so-the-user-can-customize-key-details-boyfriend-s-name-sender-name-date-and-a-short-custom-message-without-editing-code-and-ensure-the-page-can-render-sensible-defaults-if-left-blank",
+      "title": "Add simple personalization controls so the user can customize key details (boyfriend’s name, sender name, date, and a short custom message) without editing code, and ensure the page can render sensible defaults if left blank.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-delightful-but-lightweight-romantic-animations-e-g-floating-hearts-background-subtle-glow-smooth-section-transitions-that-perform-well-on-mobile-and-respect-reduced-motion-user-preferences",
+      "title": "Implement delightful but lightweight romantic animations (e.g., floating hearts background, subtle glow, smooth section transitions) that perform well on mobile and respect reduced-motion user preferences.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-website-is-fully-responsive-and-shareable-as-a-single-page-with-clear-typography-and-spacing-optimized-for-reading-on-phones",
+      "title": "Ensure the website is fully responsive and shareable as a single page, with clear typography and spacing optimized for reading on phones.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-creative-visual-theme-appropriate-for-a-romantic-proposal-and-enforce-it-consistently-across-the-page-colors-typography-spacing-components-avoid-a-blue-purple-dominant-palette",
+      "title": "Apply a coherent, creative visual theme appropriate for a romantic proposal and enforce it consistently across the page (colors, typography, spacing, components). Avoid a blue/purple-dominant palette.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-images-as-static-assets-under-frontend-public-assets-generated-and-render-them-in-the-ui-do-not-fetch-images-from-the-backend",
+      "title": "Add the required generated images as static assets under frontend/public/assets/generated and render them in the UI (do not fetch images from the backend).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-propose-day-page-defaults-so-that-when-personalization-fields-are-left-blank-the-hero-dedication-line-reads-exactly-to-my-lovely-baby-and-the-displayed-date-is-feb-8th",
+      "title": "Update the Propose Day page defaults so that, when personalization fields are left blank, the hero dedication line reads exactly \"To my lovely baby\" and the displayed date is \"Feb 8th\".",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-align-the-personalization-panel-placeholders-and-helper-text-with-the-new-default-dedication-and-date-so-the-ui-accurately-reflects-the-blank-state-defaults",
+      "title": "Align the personalization panel placeholders and helper text with the new default dedication and date so the UI accurately reflects the blank-state defaults.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expand-the-single-page-proposal-experience-into-a-multi-step-page-like-flow-that-includes-the-existing-hero-proposal-success-steps-plus-new-intermediate-steps-for-tiny-gifts-and-a-text-message-style-screen",
+      "title": "Expand the single-page proposal experience into a multi-step, page-like flow that includes the existing Hero → Proposal → Success steps plus new intermediate steps for tiny gifts and a text-message-style screen.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-at-least-two-new-tiny-gifts-pages-steps-that-display-small-romantic-gift-elements-e-g-a-gift-box-rose-teddy-ring-with-short-heart-touching-english-captions",
+      "title": "Add at least two new “tiny gifts” pages/steps that display small romantic gift elements (e.g., a gift box, rose, teddy, ring) with short, heart-touching English captions.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-text-message-page-step-that-visually-resembles-a-phone-sms-imessage-conversation-and-includes-a-romantic-message-and-a-proposal-related-line-in-english",
+      "title": "Add a new “text message” page/step that visually resembles a phone SMS/iMessage conversation and includes a romantic message and a proposal-related line in English.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-existing-personalization-controls-boyfriend-name-sender-name-date-custom-message-continue-to-work-across-the-new-pages-so-the-same-customized-values-are-reflected-consistently-throughout-the-multi-page-experience",
+      "title": "Ensure the existing personalization controls (boyfriend name, sender name, date, custom message) continue to work across the new pages so the same customized values are reflected consistently throughout the multi-page experience.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-propose-day-page-blank-state-default-date-to-display-exactly-february-8th-2026-everywhere-the-default-date-is-shown-or-referenced-including-the-hero-date-line-and-the-personalization-panel-placeholder-helper-text",
+      "title": "Update the Propose Day page blank-state default date to display exactly \"February 8th, 2026\" everywhere the default date is shown or referenced (including the hero date line and the personalization panel placeholder + helper text).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-propose-day-page-blank-state-default-sender-name-so-that-when-the-from-your-name-input-is-left-blank-the-proposal-signature-reads-exactly-from-your-baby-girl-including-capitalization-and-align-the-personalization-panel-placeholder-helper-text-to-match-this-default",
+      "title": "Update the Propose Day page blank-state default sender name so that when the \"From (Your Name)\" input is left blank, the proposal signature reads exactly \"From your Baby girl\" (including capitalization), and align the personalization panel placeholder + helper text to match this default.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a romantic Propose Day website (HTML/CSS/JS) with heart-touching message content suitable to share with boyfriend",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add multiple pages featuring tiny gifts and an additional text-message-style section to the romantic proposal website",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Romantic Propose Day single-page website to share with boyfriend",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
